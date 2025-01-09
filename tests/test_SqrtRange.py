@@ -9,6 +9,5 @@ testsecondnumber = 10
 logFile = "log.log"
 clearLog = True
 
-SqrtRange.Calculate(testfirstnumber, testsecondnumber, logFile, clearLog)
-
-exit(0)
+def test():
+    SqrtRange.Calculate(testfirstnumber, testsecondnumber, logFile, clearLog)
