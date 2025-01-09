@@ -10,6 +10,7 @@ This can be helpful, if, for example, you need this
 It's actually really simple
 
 Here is what you will need to use:
+
 `SqrtRange.Calculate(firstnumber, secondnumber, logFile, doClearLogFile)`
 
 Firstnumber and Secondnumber are integers, these will indicate the range
