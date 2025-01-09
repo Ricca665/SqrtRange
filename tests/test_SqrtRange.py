@@ -10,5 +10,3 @@ logFile = "log.log"
 clearLog = True
 
 SqrtRange.Calculate(testfirstnumber, testsecondnumber, logFile, clearLog)
-
-exit(0)
