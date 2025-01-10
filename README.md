@@ -1,10 +1,17 @@
 # SqrtRange
-
-
 SqrtRange is a simple python library used to generate Square root of numbers in a certain range.
 
-This can be helpful, if, for example, you need this
+This *can* be helpful, but not always (obviously :skull:)
 
+# Installation
+
+Here are the two main ways to install this module
+
+`python -m pip install SqrtRange`
+
+`pip install SqrtRange`
+
+This uses native python modules, so no depedencies are required :D
 
 # Documentation
 It's actually really simple
