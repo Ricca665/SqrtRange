@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='SqrtRange',         # Name of your package
-    version='0.0.4',                  # Initial version
+    version='0.0.5',                  # Initial version
     description='SqrtRange is a python library used to generate Square root numbers in a range',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
@@ -15,7 +15,7 @@ setup(
         'Operating System :: OS Independent',
     ],
     packages=find_packages(),
-    python_requires='>=3.8',
+    python_requires='>=3.12',
     install_requires=[
         # Add dependencies here
     ],
