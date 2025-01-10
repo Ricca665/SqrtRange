@@ -7,3 +7,4 @@ clearLog = True
 
 def test():
     SqrtRange.Calculate(testfirstnumber, testsecondnumber, logFile, clearLog)
+    SqrtRange.CalculateWOLogging(testfirstnumber, testsecondnumber)

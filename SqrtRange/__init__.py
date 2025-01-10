@@ -1,4 +1,4 @@
 #__init__.py
-from .calculator import Calculate
+from .calculator import *
 
-__all__ = ["Calculate"]
+__all__ = ["Calculate", "CalculateWOLogging"]
