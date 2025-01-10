@@ -18,7 +18,7 @@ It's actually really simple
 
 Here is what you can use:
 
-`SqrtRange.Calculate(firstnumber, secondnumber)`
+`SqrtRange.CalculateWOLogging(firstnumber, secondnumber)`
 
 `SqrtRange.Calculate(firstnumber, secondnumber, logFile, doClearLogFile)`
 
