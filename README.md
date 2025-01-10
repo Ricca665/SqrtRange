@@ -6,10 +6,11 @@ SqrtRange is a simple python library used to generate Square root of numbers in 
 This can be helpful, if, for example, you need this
 
 
-# How can i use it?
+# Documentation
 It's actually really simple
 
-Here is what you will need to use:
+Here is what you can use:
+`SqrtRange.Calculate(firstnumber, secondnumber)`
 
 `SqrtRange.Calculate(firstnumber, secondnumber, logFile, doClearLogFile)`
 
