@@ -17,6 +17,7 @@ This uses native python modules, so no depedencies are required :D
 It's actually really simple
 
 Here is what you can use:
+
 `SqrtRange.Calculate(firstnumber, secondnumber)`
 
 `SqrtRange.Calculate(firstnumber, secondnumber, logFile, doClearLogFile)`
