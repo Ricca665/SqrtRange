@@ -6,5 +6,5 @@ logFile = "log.log"
 clearLog = True
 
 def test():
-    SqrtRange.Calculate(testfirstnumber, testsecondnumber, logFile, clearLog)
-    SqrtRange.CalculateWOLogging(testfirstnumber, testsecondnumber)
+    SqrtRange.Calculate(testfirstnumber, testsecondnumber, logFile, clearLog, True)
+    SqrtRange.CalculateWOLogging(testfirstnumber, testsecondnumber, True)
