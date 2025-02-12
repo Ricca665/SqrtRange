@@ -5,7 +5,7 @@ from multiprocessing import Pool
 
 #Multiprocessing guide took from https://www.run.ai/guides/distributed-computing/parallel-computing-with-python
 
-def RealCalculate(startingnumber, endingnumber, logFile, doClearLogFile, doTimeTaken):
+def Calculate(startingnumber, endingnumber, logFile, doClearLogFile, doTimeTaken):
     numbercounter = 0
     if doTimeTaken:
         starttimer = time.time()
@@ -31,15 +31,16 @@ def RealCalculate(startingnumber, endingnumber, logFile, doClearLogFile, doTimeT
     if doTimeTaken:
         time_count = time.time() - starttimer
         print(str(time_count)+"s "+str(numbercounter-1))
-def Calculate(startingnumber, endingnumber, logFile, doClearLogFile, doTimeTaken):
-    with Pool(4) as p:
-        p.apply(RealCalculate, args=(startingnumber, endingnumber, logFile, doClearLogFile, doTimeTaken))
+
+def CalculateWithThreads(startingnumber, endingnumber, logFile, doClearLogFile, doTimeTaken, threads):
+    with Pool(int(threads)) as p:
+        p.apply(Calculate, args=(startingnumber, endingnumber, logFile, doClearLogFile, doTimeTaken))
+
+def CalculateWOLoggingWithThreads(startingnumber, endingnumber, doTimeTaken, threads):
+    with Pool(int(threads)) as p:
+        p.apply(CalculateWOLogging, args=(startingnumber, endingnumber, doTimeTaken))
 
 def CalculateWOLogging(startingnumber, endingnumber, doTimeTaken):
-    with Pool(4) as p:
-        p.apply(RealCalculateWOLogging, args=(startingnumber, endingnumber, doTimeTaken))
-
-def RealCalculateWOLogging(startingnumber, endingnumber, doTimeTaken):
     numbercounter = 0
     if doTimeTaken:
         starttimer = time.time()
